@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url(../fonts/glyphicons-halflings-regular.woff2);
+    src: url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/glyphicons-halflings-regular.woff2) format('woff2'),
+         url(../fonts/glyphicons-halflings-regular.woff) format('woff'),
+         url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'),
+         url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.bg-color{
+    width: 40%;
+    height: 100vh;
+    background-color: #1AEBB6;
+}
+.login-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 80vh;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 16px -3px rgba(0,0,0,0.69);
+    -webkit-box-shadow: 0px 4px 16px -3px rgba(0,0,0,0.69);
+    -moz-box-shadow: 0px 4px 16px -3px rgba(0,0,0,0.69);    display: flex;
+}
+
+.logoLogin{
+    width: 70%;
+    object-fit: contain;
+}
+
+.login-left{
+    width: 35.8%;
+    background-color: #1AEBB6;
+    padding: 20px;
+}
+
+.login-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30%;
+}
+
+.login-name{
+    margin-bottom: 10px;
+    font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.login-page>p{
+    color: #000000;
+    font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: .9rem;
+    letter-spacing: 1px;
+}
+
+.login-right{
+    width: 64.2%;   
+    display: flex;
+    font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    position: relative;
+}
+
+.login-right>.home{
+    position: absolute;
+    right: 20px;
+    margin-top: 20px;
+}
+
+.home>a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: 900;
+    cursor: pointer;
+    border-bottom: 2px solid #000000;
+}
+
+.login-wrapper{
+    width: 70%;
+    height: 300px;
+    padding: 10px;
+    margin: 20% auto;
+}
+
+.login-wrapper>.login{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.form-group>p{
+    font-size: 1.1rem;
+    color: #000000;
+    font-weight: 900;
+}
+
+input{
+width: 100%;
+padding: 10px;
+}
+
+input:focus{
+    outline: none;
+}
+
+.btn{
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    font-size: 1.1rem;
+    cursor: pointer;
+    background-color: #1AEBB6 ;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: all .3s ease;
+    background-image: linear-gradient(rgb(0 0 0/40%) 0 0);
+    background-blend-mode: lighten;
+    margin-top: 20px;
+}
+
+.btn:hover{
+    background-blend-mode: darken;
+}

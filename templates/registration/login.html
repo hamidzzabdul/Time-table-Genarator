@@ -1,0 +1,93 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="DSC AISSMSCOE">
+    <meta name="description" content="Login">
+
+    <!-- Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'CSS/logins.css' %}">
+
+  </head>
+  <body>
+    <!-- <form method="post" id="form1">
+      {% csrf_token %}
+      <div id="divLOGINPAGE" class="sr">
+        <div class="login-box-body">
+          <div class="row">
+            <div class="col">
+              <div class="text-center loginLeft">
+                <h4 class="logWelC">WELCOME TO </h4>
+                <img class="logoLogin" src="">
+                <h3 class="Alignment">
+                  <center><strong>Login </strong></center>
+                </h3>
+              </div>
+            </div>
+            <div class="col">
+              <div class="loginRight">
+                <h3><strong>Sign In </strong></h3>
+                <div class="form-group has-feedback">
+                  {{ form.username }}
+                  <span class="glyphicon glyphicon-user  form-control-feedback"></span>
+                </div>
+                <div class="form-group has-feedback">
+                  {{ form.password }}
+                  <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                  {% if form.errors %}
+                  <span class="lblnote">Invalid User Name Or Password.</span>
+                  {% endif %}
+                </div>
+                <button type="submit" class="btn btn-info"><span class="fa fa-unlock-alt" ></span>&nbsp;Login</button>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+</form> -->
+
+<div class="bg-color"></div>
+<div class="login-container">
+      <div class="login-left">
+        <div class="login-page">
+            <img class="logoLogin" src="{% static 'img/log.png' %}" alt="">
+            <h1 class="login-name">Time-Table Scheduler</h1>
+            <p>Schedule Timetable with ease</p>
+        </div>
+      </div>
+      <div class="login-right">
+        <p class="home"><a href="/">Home</a></p>
+        <div class="login-wrapper">
+        <h1 class="login">Login</h1>
+      <form method="post" id="form2" class="form-control">
+          {% csrf_token %}
+          <div class="form-group has-feedback">
+            <p>Email</p>
+            {{ form.username }}
+            <span class="glyphicon glyphicon-user  form-control-feedback"></span>
+        </div>
+        <div class="form-group has-feedback">
+            <p>Password</p>
+          {{ form.password }}
+          <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+          {% if form.errors %}
+          <span class="lblnote">Invalid User Name Or Password.</span>
+          {% endif %}
+        </div>
+        <button type="submit" class="btn btn-info"><span class="fa fa-unlock-alt" ></span>&nbsp;Login</button>
+    </form>
+</div>
+</div>
+</div> 
+  </body>
+</html>
+
+
